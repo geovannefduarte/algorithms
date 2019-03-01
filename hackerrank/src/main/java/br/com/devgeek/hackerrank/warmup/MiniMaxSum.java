@@ -1,11 +1,8 @@
 package br.com.devgeek.hackerrank.warmup;
 
 import java.io.ByteArrayInputStream;
-import java.io.File;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 public class MiniMaxSum {
@@ -17,10 +14,10 @@ public class MiniMaxSum {
              minValue = Integer.MAX_VALUE,
              maxValue = Integer.MIN_VALUE;
 
-        for (int anArr : arr){
-            if (anArr > maxValue) maxValue = anArr;
-            if (anArr < minValue) minValue = anArr;
-            sumOfValues += anArr;
+        for (int number : arr){
+            if (number > maxValue) maxValue = number;
+            if (number < minValue) minValue = number;
+            sumOfValues += number;
         }
 
         System.out.println((sumOfValues-maxValue)+" "+(sumOfValues-minValue));
